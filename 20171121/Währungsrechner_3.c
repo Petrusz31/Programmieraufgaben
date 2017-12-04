@@ -9,16 +9,19 @@ char urspw, endw;
 int wahl;
 double menge;
 
-printf("Waehlen sie die Ursprungswaehrung: \n[E] EUR\n[U] USD\n[3]");
-urspw = getchar();
-printf("Waehlen sie die Endwaehrung: \n[E] EUR\n[U] USD\n[3]");
-endw = getchar();
+printf("Waehlen sie die Ursprungswaehrung: \n[E] EUR\n[U] USD\n[3] \n");
+scanf("%c", &urspw);
+getchar();
+printf("Waehlen sie die Endwaehrung: \n[E] EUR\n[U] USD\n[3] \n");
+scanf("%c", &endw);
+getchar();
 if (urspw == endw) {
     printf("Fehlerhafte Eingabe!");
     return 0;
 }
 printf("Geben sie den zu rechnenden Geldwert ein: ");
 scanf("%lf", &menge);
+getchar();
 wahl = urspw - endw;
 
 printf("Resultat: %lf", umrechnung(menge, wahl));
