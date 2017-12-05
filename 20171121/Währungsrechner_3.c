@@ -35,16 +35,14 @@ printf("Resultat: %.2lf", umrechnung(menge, wahl));
 }
 
 double umrechnung(double wert, int wahl) {
-    switch (wahl) {     //Eigentlich muss man erst überprüfen, ob andere Zeichen als E oder U eingegeben wurden
+    switch (wahl) {    
         case 'E' - 'U': return wert*USD_EUR;
         case 'U' - 'E': return wert/USD_EUR;
         case 'U' - 'D': return wert*USD_DM;
         case 'E' - 'D': return wert*EUR_DM;
         case 'D' - 'U': return wert/USD_DM;
         case 'D' - 'E': return wert/EUR_DM;
-
         default: return 2.2;
-
     }
 }
 
@@ -55,5 +53,4 @@ switch (wahl) {
     case 'D': return;
     default: printf("Fehlerhafte Eingabe!"); exit (1);
 }
-
 }
