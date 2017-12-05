@@ -9,8 +9,8 @@ const double USD_DM = 0.85*2;
 
 //Funktionsdeklarationen
 
-double umrechnung(double wert, int wahl);
-void check(char wahl);
+double umrechnung(double wert, int wahl);   //Die Rechnung auf Basis der Auswahl
+void check(char wahl);                      //Testet, ob ungültige Werte eingegeben wurden
 
 int main() {
 char urspw, endw;   //Ursprungswert, Endwert
@@ -42,7 +42,7 @@ printf("Resultat: %.2lf", umrechnung(menge, wahl));
 //Funktionsdefinitionen
 
 double umrechnung(double wert, int wahl) {
-    switch (wahl) {    
+    switch (wahl) {    //Char-Arithmetik, um herauszufinden, in welche Richtung gerechnet werden soll
         case 'E' - 'U': return wert*USD_EUR;
         case 'U' - 'E': return wert/USD_EUR;
         case 'U' - 'D': return wert*USD_DM;
