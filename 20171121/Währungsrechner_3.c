@@ -19,20 +19,21 @@ double menge;
 
 printf("Waehlen sie die Ursprungswaehrung: \n[E] EUR\n[U] USD\n[D] DM\n");
 scanf("%c", &urspw);
-getchar();
+getchar();  //Bugfix - Die Eingabe mit Enter bei Scanf erzeugt einen Zeilenumbruch, den sonst das nächste scanf lesen würde.
+            //Getchar frisst dieses \n
 check(urspw);
 printf("Waehlen sie die Endwaehrung: \n[E] EUR\n[U] USD\n[D] DM\n");
 scanf("%c", &endw);
 getchar();
 check(endw);
-if (urspw == endw) {
+if (urspw == endw) {        //Fehler bei identischen Eingaben
     printf("Fehlerhafte Eingabe!");
     return 0;
 }
 printf("Geben sie den zu rechnenden Geldwert ein: ");
 scanf("%lf", &menge);
 getchar();
-wahl = urspw - endw;
+wahl = urspw - endw;    //Char-Arithmetik, um die Werte aus dem Switch-Case zu haben
 
 printf("Resultat: %.2lf", umrechnung(menge, wahl));
 
