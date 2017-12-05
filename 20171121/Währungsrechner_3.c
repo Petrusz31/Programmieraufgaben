@@ -38,7 +38,7 @@ wahl = urspw - endw;    //Char-Arithmetik, um die Werte aus dem Switch-Case zu h
 printf("Resultat: %.2lf", umrechnung(menge, wahl));
 
 }
-
+ 
 //Funktionsdefinitionen
 
 double umrechnung(double wert, int wahl) {

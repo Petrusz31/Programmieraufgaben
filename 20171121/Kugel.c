@@ -14,7 +14,7 @@ printf("Volumen ist: %lf\n", volRech(radius));
 printf("Oberflaeche ist: %lf", obRech(radius));
 
 }
-
+ 
 double volRech(double radius) {
 return 0.75*pi*(radius*radius*radius);
 }
