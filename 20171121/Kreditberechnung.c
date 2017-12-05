@@ -2,7 +2,7 @@
 
 int kredit(double kredithoehe, double jahrzins, double monatsrate);
 
-//
+
 int main() {
 double kredithoehe, jahrzins, monatsrate;
 

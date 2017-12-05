@@ -13,8 +13,8 @@ double umrechnung(double wert, int wahl);
 void check(char wahl);
 
 int main() {
-char urspw, endw;
-int wahl;
+char urspw, endw;   //Ursprungswert, Endwert
+int wahl;           //Auswahl
 double menge;
 
 printf("Waehlen sie die Ursprungswaehrung: \n[E] EUR\n[U] USD\n[D] DM\n");
