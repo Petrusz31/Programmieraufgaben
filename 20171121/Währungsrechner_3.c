@@ -1,9 +1,13 @@
 #include "stdio.h"
 #include "stdlib.h" //Notwendig für Exit
 
+//Konstanten
+
 const double USD_EUR = 0.85;
 const double EUR_DM = 2;
 const double USD_DM = 0.85*2;
+
+//Funktionsdeklarationen
 
 double umrechnung(double wert, int wahl);
 void check(char wahl);
@@ -33,6 +37,8 @@ wahl = urspw - endw;
 printf("Resultat: %.2lf", umrechnung(menge, wahl));
 
 }
+
+//Funktionsdefinitionen
 
 double umrechnung(double wert, int wahl) {
     switch (wahl) {    
