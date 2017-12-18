@@ -53,7 +53,15 @@
                 "G:/Tools/MinGW/include/GL",
                 "G:/Tools/MinGW/include/parts",
                 "G:/Tools/MinGW/include/sys",
-                "G:/Tools/MinGW/lib/gcc/mingw32/6.3.0/include"
+                "G:/Tools/MinGW/lib/gcc/mingw32/6.3.0/include",
+                "C:/MinGW/bin",
+                "C:/MinGW/include",
+                "C:/MinGW/include/ddk",
+                "C:/MinGW/include/gdiplus",
+                "C:/MinGW/include/GL",
+                "C:/MinGW/include/parts",
+                "C:/MinGW/include/sys",
+                "C:/MinGW/lib/gcc/mingw32/6.3.0/include"
             ],
             "defines": [
                 "_DEBUG",
