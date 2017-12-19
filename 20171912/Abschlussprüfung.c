@@ -50,7 +50,18 @@ return 4;
 } else {}
 return 5;
 }
-
 double AusgabeNoteB(double Note) {
+if(Note < 50){
+}
+    else bestanden = TRUE;
+        if(Note > 92){return 1;
+        } else
+        if(Note > 81){return 2;
+        } else
+        if(Note > 67){return 3;
+        } else
+        if(Note > 50){return 4;
+        } else return 5;
+    
 
 }
