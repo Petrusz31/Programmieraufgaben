@@ -1,3 +1,4 @@
+
 #include "stdio.h"
 
 #define TRUE 1
@@ -21,3 +22,11 @@ printf("Bestanden: %fl", BerechneEndwert(noteA, noteB));
 
 }
 
+double BerechneEndwert(double TeilA,double TeilB){
+    double AusgabeA, AusgabeB;
+    AusgabeA=AusgabeNoteA(TeilA);
+    AusgabeB=AusgabeNoteB(TeilB);
+    printf("Bestanden = 1; Nicht Bestanden = 0: %d",bestanden);
+    printf("Note Teil A: %lf",AusgabeA);
+    printf("Note Teil B: %lf",AusgabeB);
+}
