@@ -30,3 +30,12 @@ double BerechneEndwert(double TeilA,double TeilB){
     printf("Note Teil A: %lf",AusgabeA);
     printf("Note Teil B: %lf",AusgabeB);
 }
+
+double AusgabeNoteA(double Note) {
+
+
+}
+double AusgabeNoteB(double Note) {
+
+
+}
