@@ -2,6 +2,7 @@
 #include "stdio.h"
 
 #define TRUE 1
+#define FALSE 0
 
 double BerechneEndwert(double, double);
 double AusgabeNoteA(double);
@@ -32,13 +33,27 @@ double BerechneEndwert(double TeilA,double TeilB){
 }
 
 double AusgabeNoteA(double Note) {
+if (Note < 50) {
+    
+} else {
+bestanden = FALSE;
+}
 
-
+if(Note >= 92) {
+return 1;
+} else if (Note >= 81) {
+return 2;
+} else if (Note >= 67) {
+return 3;
+} else if (Note >= 50) {
+return 4;
+} else {}
+return 5;
 }
 double AusgabeNoteB(double Note) {
 if(Note < 50){
 }
-    else Bestanden = TRUE
+    else bestanden = TRUE;
         if(Note > 92){return 1;
         } else
         if(Note > 81){return 2;
